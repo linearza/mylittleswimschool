@@ -27,8 +27,18 @@
         max-width: 120px;
       }
       form{
+        text-align: center;
         input{
-          margin-right: 20px;
+          width: 48%;
+          &:first-child{
+            margin-right: 1%
+          }
+          &[type="submit"]{
+            max-width: 150px;
+          }
+        }
+        textarea{
+          width: 98%;
         }
       }
     }
