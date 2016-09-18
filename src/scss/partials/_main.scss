@@ -28,10 +28,10 @@
       }
     }
     &:nth-child(even){
-      background: $blue-lighter;
+      background: $grey-lighter;
       img {
         border-color: $white;
-        background: $blue-lighter;
+        background: $grey-lighter;
       }
     }
     @include respond-to(768) {

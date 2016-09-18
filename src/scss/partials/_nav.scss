@@ -17,11 +17,14 @@
         display: block;
         text-transform: uppercase;
         font-weight: 500;
-        color: #444;
+        color: $grey-dark;
       }
-      &:active, &:hover{
-        background: $grey-light;
+      &:hover{
+        background: $grey-lighter;
         border-radius: 3px;
+      }
+      &:active{
+        background: $blue-lighter;
       }
     }
   }
