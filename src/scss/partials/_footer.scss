@@ -1,3 +1,45 @@
 .footer {
-
+  background: $blue-dark;
+  color: $white;
+  border-top: 6px solid $white;
+  .content{
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 60px 20px 60px;
+    ul {
+      list-style: none;
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 50px 30px 0px;
+      .heading{
+        text-transform: uppercase;
+        font-weight: 100;
+        opacity: 0.8;
+        margin-bottom: 12px;
+        display: inline-block;
+        font-size: 14px;
+      }
+      li{
+        cursor: pointer;
+        position: relative;
+        transition: opacity 100ms linear;
+        a{
+          text-decoration: none;
+          color: $white;
+        }
+        &:hover{
+          opacity: 0.9;
+        }
+        &.icon{
+          padding-left: 25px;
+          svg{
+            fill: $white;
+            max-width: 20px;
+            position: absolute;
+            left:0;
+          }
+        }
+      }
+    }
+  }
 }

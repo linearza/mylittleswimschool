@@ -3,10 +3,61 @@
     .content{
       max-width: 768px;
       margin: 0 auto;
-      padding: 80px 20px 30px 20px;
+      padding: 80px 20px 80px 20px;
+      position: relative;
+      h2 {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+      }
+      p{
+        line-height: 2em;
+        font-size: 16px;
+        position:relative;
+        z-index: 2;
+      }
+      img {
+        border: 3px solid $grey-light;
+        border-radius: 100%;
+        padding: 8px;
+        background: $white;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 20px;
+        max-width: 120px;
+      }
     }
     &:nth-child(even){
       background: $blue-lighter;
+      img {
+        border-color: $white;
+        background: $blue-lighter;
+      }
+    }
+    @include respond-to(768) {
+      .content{
+        h2 {
+          text-align: left;
+        }
+        img{
+          padding: 15px;
+          border-width: 6px;
+          max-width: 100%;
+          display: inline-block;
+          float: left;
+          margin-right: 20px;
+          margin-bottom: 0px;
+        }
+      }
+      &:nth-child(even){
+        .content{
+          img{
+            display: inline-block;
+            float: right;
+            margin-left: 20px;
+          }
+        }
+      }
     }
   }
 }

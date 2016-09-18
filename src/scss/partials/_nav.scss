@@ -8,7 +8,7 @@
     li {
       display: inline-block;
       background: transparent;
-      transition: background-color 200ms linear;
+      transition: background-color 100ms linear;
       margin: 0;
       a {
         text-decoration: none;
@@ -17,13 +17,11 @@
         display: block;
         text-transform: uppercase;
         font-weight: 500;
+        color: #444;
       }
       &:active, &:hover{
-        background: $blue-lighter;
+        background: $grey-light;
         border-radius: 3px;
-      }
-      &:focus{
-        border: 1px solid $blue-light;
       }
     }
   }
