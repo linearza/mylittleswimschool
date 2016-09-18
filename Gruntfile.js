@@ -223,7 +223,6 @@ module.exports = function(grunt) {
       dev: {
         files: {
           '<%= project.assets %>/css/style.min.css': [
-            '<%= project.src %>/components/normalize-css/normalize.css',
             '<%= project.assets %>/css/style.unprefixed.css'
           ]
         }
@@ -231,7 +230,6 @@ module.exports = function(grunt) {
       dist: {
         files: {
           '<%= project.assets %>/css/style.min.css': [
-            '<%= project.src %>/components/normalize-css/normalize.css',
             '<%= project.assets %>/css/style.prefixed.css'
           ]
         }
