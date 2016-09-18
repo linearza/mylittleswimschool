@@ -11,7 +11,15 @@
     var select = document.getElementById('mobile-nav');
 
     select.onchange = function() {
-      window.location.hash = this.getElementsByTagName('option')[this.selectedIndex].value;
+
+      let hash = this.getElementsByTagName('option')[this.selectedIndex].value;
+
+      $('body').animate({
+        scrollTop: $('#' + hash).position().top
+      }, 300, function() {
+        window.location.hash = hash;
+      });
+
     };
 
   });
