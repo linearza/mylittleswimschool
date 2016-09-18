@@ -9,24 +9,31 @@
       display: inline-block;
       background: transparent;
       transition: background-color 200ms linear;
-      padding: 10px;
       margin: 0;
       a {
         text-decoration: none;
-        font-size: 16px;
+        font-size: 15px;
+        padding: 7px 10px;
+        display: block;
+        text-transform: uppercase;
+        font-weight: 500;
       }
       &:active, &:hover{
-        background: $white;
+        background: $blue-lighter;
         border-radius: 3px;
+      }
+      &:focus{
+        border: 1px solid $blue-light;
       }
     }
   }
   select{
     margin: 0;
-    width: 90%;
+    width: 95%;
   }
   &.mobile{
     display: block;
+    padding-left: 60px;
   }
   @include respond-to(768) {
     display: block;
