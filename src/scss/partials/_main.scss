@@ -15,6 +15,14 @@
         font-size: 16px;
         position:relative;
         z-index: 2;
+        &.highlight{
+          font-size: 24px;
+          line-height: 1.2em;
+          padding: 10px 20px;
+          border-right: 3px solid $pink;
+          text-align: right;
+          margin-right: 10px;
+        }
       }
       img {
         border: 3px solid $grey-light;
@@ -29,24 +37,62 @@
       form{
         text-align: center;
         input{
-          width: 48%;
+          width: calc(50% - 7px);
           &:first-child{
-            margin-right: 1%
+            margin-right: 10px;
           }
           &[type="submit"]{
             max-width: 150px;
+            &[disabled]{
+              border: 1px solid $grey-light;
+              color: $grey-light;
+            }
           }
         }
         textarea{
-          width: 98%;
+          width: 100%;
+        }
+        .alert{
+          font-size: 16px;
+          margin: 10px 0 20px;
+          padding: 5px;
+          border-radius: 4px;
+          &.sending{
+            background: $blue-light;
+          }
+          &.sent{
+            background: $green-light;
+          }
+          &.error{
+            background: $red-light;
+          }
+        }
+        .is-hidden{
+          display: none;
+        }
+      }
+      table{
+        width: 90%;
+        margin: 40px auto;
+        clear: both;
+        th {
+          font-size: 14px;
         }
       }
     }
     &:nth-child(even){
       background: $grey-lighter;
-      img {
-        border-color: $white;
-        background: $grey-lighter;
+      .content{
+        img {
+          border-color: $white;
+          background: $grey-lighter;
+        }
+        p.highlight{
+          border-right: 0;
+          border-left: 3px solid $pink;
+          text-align: left;
+          margin-left: 10px;
+        }
       }
     }
     @include respond-to(768) {

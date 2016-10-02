@@ -4,24 +4,28 @@
   ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 77px;
+    text-align: left;
     li {
       display: inline-block;
       background: transparent;
       transition: background-color 100ms linear;
-      margin: 0;
+      margin: 0 0 0 -4px;
+      border-left: 1px solid $grey-lighter;
       a {
         text-decoration: none;
-        font-size: 15px;
-        padding: 7px 10px;
+        font-size: 16px;
+        padding: 10px 15px;
         display: block;
-        text-transform: uppercase;
-        font-weight: 500;
-        color: $grey-dark;
+        font-weight: 400;
+        color: $blue-dark;
+        outline: none;
       }
       &:hover{
         background: $grey-lighter;
-        border-radius: 3px;
+        a {
+          opacity: 0.8;
+        }
       }
       &:active{
         background: $blue-lighter;
@@ -39,6 +43,7 @@
   }
   @include respond-to(768) {
     display: block;
+    padding: 7px 0;
     &.mobile{
       display: none;
     }

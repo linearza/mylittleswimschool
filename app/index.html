@@ -29,13 +29,10 @@
           <nav class="nav desktop" role="navigation">
             <ul>
               <li>
-                <a href="#learn">Learn</a>
-              </li>
-               <li>
-                <a href="#develop">Develop</a>
-              </li>
-               <li>
                 <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#fees">Fees</a>
               </li>
               <li>
                 <a href="#contact">Contact</a>
@@ -44,9 +41,8 @@
           </nav>
           <nav class="nav mobile" role="navigation">
             <select id="mobile-nav">
-              <option value="learn">Learn</option>
-              <option value="develop">Develop</option>
               <option value="about">About</option>
+              <option value="fees">Fees</option>
               <option value="contact">Contact</option>
             </select>
           </nav>
@@ -56,43 +52,76 @@
     </header>
 
     <main class="main" role="main">
-      <section id="learn">
-        <div class="content">
-          <h2>Learn to swim</h2>
-          <img src="assets/img/section-image.jpg">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel tempor sapien, eu porta est. Nunc molestie convallis risus, a euismod sapien dictum sed. Integer at tellus velit. Donec at metus consequat, tristique ipsum in, lobortis urna. Phasellus aliquet tincidunt lacus, ac finibus augue pellentesque et. Aliquam interdum lorem nibh, ac auctor ligula euismod nec. Suspendisse potenti. Aliquam erat volutpat. Quisque venenatis orci vel metus tincidunt placerat. Suspendisse potenti. Donec ultrices libero at luctus molestie. Sed consectetur ipsum et lorem posuere ornare. Integer imperdiet justo est, non tempor massa sollicitudin vitae.
-          </p>
-        </div>
-      </section>
-
-      <section id="develop">
-        <div class="content">
-          <h2>Develop the stroke</h2>
-          <img src="assets/img/section-image-3.jpg">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel tempor sapien, eu porta est. Nunc molestie convallis risus, a euismod sapien dictum sed. Integer at tellus velit.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel tempor sapien, eu porta est. Nunc molestie convallis risus, a euismod sapien dictum sed. Integer at tellus velit.
-          </p>
-        </div>
-      </section>
-
       <section id="about">
         <div class="content">
           <h2>About me</h2>
+          <img src="assets/img/section-image.jpg">
+          <p>Hi, My name is Daniella and I'm here to help your little one feel safe and confident when swimming. It is so important for our kids to learn the skills required to be able to confidently play and have fun in the water, whether it be in the ocean, at a friend's pool, at school or wherever else.  Swimming is a skill every child needs and deserves to learn. Swimming is also an amazing way for your child to keep active and build up strength and muscle tone for everyday activities. It is also very beneficial for your child's coordination and balance. </p>
+
+          <p>Here at my little swim school your child is my priority.  I have an absolute passion for kids and swimming. I myself was a swimmer for many years; I retired from the sport in 2011. I went as far as to represent South Africa numerous times at FINA World Champs. I have my honours degree in Sport Science and I am also a qualified Sports Massage therapist. I'm so excited for you to get involved so I can help your little one reach his/her potential and feel safe and confident in the water! </p>
+        </div>
+      </section>
+
+      <section id="fees">
+        <div class="content">
+          <h2>Fees</h2>
           <img src="assets/img/section-image-2.jpg">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel tempor sapien, eu porta est. Nunc molestie convallis risus, a euismod sapien dictum sed. Integer at tellus velit. Donec at metus consequat, tristique ipsum in, lobortis urna. Phasellus aliquet tincidunt lacus, ac finibus augue pellentesque et. Aliquam interdum lorem nibh, ac auctor ligula euismod nec. Suspendisse potenti. Aliquam erat volutpat. Quisque venenatis orci vel metus tincidunt placerat. Suspendisse potenti. Donec ultrices libero at luctus molestie. Sed consectetur ipsum et lorem posuere ornare. Integer imperdiet justo est, non tempor massa sollicitudin vitae.</p>
+          <p>I charge per lesson. Fees are payable per term and each termly payment will differ due to the changing amount of weeks in each term. Please contact me for more information</p>
+          <p class="highlight"><b>Start-up special</b> of <b>R75 per lesson</b> for 2016</p>
+
+          <table>
+            <tr>
+              <th>
+                Term
+              </th>
+              <th>
+                Calendar 2017
+              </th>
+              <th>
+                Weeks
+              </th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>9 Jan – 30 March</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>17 April – 29 June</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>24 July – 28 September</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>9 Oct – 7 Dec</td>
+              <td>6</td>
+            </tr>
+          </table>
+
+          <p>My Little Swim School offers one on one lessons &amp; two on one lessons. I will be implementing tots swimming as well as mommy baby classes in 2017.</p>
         </div>
       </section>
 
       <section id="contact">
         <div class="content">
           <h2>Contact me</h2>
-          <form action="https://formspree.io/vanwijk.mc@gmail.com"
-                method="POST">
-              <input type="text" name="name" placeholder="Full Name">
-              <input type="email" name="_replyto" placeholder="email@domain.com">
-              <textarea placeholder="How can I help?"></textarea>
-              <input type="submit" value="Send">
+
+          <form id="contact-form" action="//formspree.io/vanwijk.mc@gmail.com" method="post">
+            <input type="text" name="Name" placeholder="Your name" required>
+            <input type="email" name="Email" placeholder="Your email" required>
+            <textarea name="Message" cols="30" rows="6" placeholder="How can I help you?" required></textarea>
+            <!-- CONFIG -->
+            <input class="is-hidden" type="text" name="_gotcha">
+            <input type="hidden" name="_subject" value="Subject">
+            <!-- /CONFIG -->
+            <input class="submit" type="submit" value="Send">
           </form>
+
         </div>
       </section>
     </main>
@@ -100,19 +129,29 @@
     <footer class="footer" role="contentinfo">
       <div class="content">
         <ul class="sections">
-          <li><a href="#learn">Learn</a></li>
-          <li><a href="#develop">Develop</a></li>
-          <li><a href="#about">About me</a></li>
-          <li><a href="#contact">Get in touch</a></li>
+          <span class="heading">Links</span>
+          <li><a href="#about">About</a></li>
+          <li><a href="#fees">Fees</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
 
         <ul class="social">
-          <span class="heading">Connect with me on</span>
-          <li class="icon">
-            <svg id="facebook-square" class="custom-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
-              <path class="inner-shape" d="M82.667,1H17.335C8.351,1,1,8.351,1,17.336v65.329c0,8.99,7.351,16.335,16.334,16.335h65.332 C91.652,99.001,99,91.655,99,82.665V17.337C99,8.353,91.652,1.001,82.667,1L82.667,1z M84.318,50H68.375v42.875H50V50h-8.855V35.973 H50v-9.11c0-12.378,5.339-19.739,19.894-19.739h16.772V22.3H72.967c-4.066-0.007-4.57,2.12-4.57,6.078l-0.023,7.594H86.75 l-2.431,14.027V50z"></path>
-            </svg>
-            Facebook
+          <span class="heading">Daily updates on</span>
+          <li class="link">
+            <a href="https://www.facebook.com/mylittleswimschoolsa/" target="_blank">
+              <svg id="facebook-square" class="custom-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+                <path class="inner-shape" d="M82.667,1H17.335C8.351,1,1,8.351,1,17.336v65.329c0,8.99,7.351,16.335,16.334,16.335h65.332 C91.652,99.001,99,91.655,99,82.665V17.337C99,8.353,91.652,1.001,82.667,1L82.667,1z M84.318,50H68.375v42.875H50V50h-8.855V35.973 H50v-9.11c0-12.378,5.339-19.739,19.894-19.739h16.772V22.3H72.967c-4.066-0.007-4.57,2.12-4.57,6.078l-0.023,7.594H86.75 l-2.431,14.027V50z"></path>
+              </svg>
+              Facebook
+            </a>
+          </li>
+          <li class="link">
+            <a href="https://www.instagram.com/mylittleswimschoolsa/" target="_blank">
+              <svg id="instagram" class="custom-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+                <path class="inner-shape"  d="M88.2,1H11.8C5.85,1,1.026,5.827,1.026,11.781V88.22C1.026,94.174,5.85,99,11.8,99H88.2c5.95,0,10.774-4.826,10.774-10.78 V11.781C98.973,5.827,94.149,1,88.2,1z M49.946,31.184c10.356,0,18.752,8.4,18.752,18.762c0,10.361-8.396,18.761-18.752,18.761 s-18.752-8.4-18.752-18.761S39.589,31.184,49.946,31.184z M87.513,83.615c0,2.165-1.753,3.919-3.917,3.919H16.341 c-2.164,0-3.917-1.755-3.917-3.919v-41.06h8.508c-0.589,2.35-0.904,4.807-0.904,7.34c0,16.612,13.459,30.079,30.063,30.079 s30.063-13.466,30.063-30.079c0-2.533-0.315-4.99-0.904-7.34h8.263L87.513,83.615L87.513,83.615z M87.764,27.124 c0,2.165-1.754,3.919-3.918,3.919H72.723c-2.164,0-3.917-1.755-3.917-3.919v-11.13c0-2.165,1.754-3.919,3.917-3.919h11.123 c2.165,0,3.918,1.755,3.918,3.919V27.124z"></path>
+              </svg>
+              Instagram
+            </a>
           </li>
         </ul>
 
@@ -121,6 +160,7 @@
           <li><a href="mailto:daniella@mylittleswimschool.co.za">daniella@mylittleswimschool.co.za</a></li>
           <li><a href="tel:+27722815372">+27 72 281 5372</a></li>
         </ul>
+        <span class="note">Danielle is an ex-South African swimmer and <a href="http://swimsa.org/" target="_blank">SSA registered</a></span>
       </div>
     </footer>
 
